@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bharti Soni</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="root">
+       
+    </div>
+     we will just put h1 tag and hello world inside this div using react. -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script>
+    const heading = React.createElement("h1",{},"Hello world from React!");
+    // we need to put this heading into div
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    // this root is a place where all the react code will run
+    root.render(heading);
+</script> 
+
+<!-- we create a separate JS file -->
+<script type="module" src="./App.js"></script>
+<!-- if we change the order of files(means if we write App.js file above two links) it will throw an error -->
+</body>
+</html>

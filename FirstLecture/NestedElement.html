@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Element</title>
+</head>
+<body>
+    <h1>hello top of root</h1>
+    <div id="root">
+        <h1>Bharti is here</h1>
+    </div>
+    <h1>hello Below of root</h1>
+    <!-- Bharti is here is replaced by h1 tag,hello top of root and hello below of root will not replaced. React is only working inside my div (id root)-->
+
+
+    <!-- we want to create this using React -->
+    <!-- <div>
+        <div>
+            <h1>This is h1 tag</h1>
+        </div>
+    </div> -->
+
+     
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <script>
+    /*const parent=React.createElement("div",{id:"parent"},React.createElement("div",{id:"child"},React.createElement("h1",{},"this is h1 tag")));
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(parent);
+    // React element(object)=>HTML(Browser understands)*/
+
+
+
+
+   /*<div>
+        <div>
+            <h1>This is h1 tag</h1>
+            <h2>This is h2 tag</h2>
+        
+        </div>
+    </div>*/
+
+// if we have to give two elements as siblings ,thenwe have to create an array of children
+    const parent=React.createElement("div",{id:"parent"},
+    React.createElement("div",{id:"child"},
+    //this is array of children
+    [React.createElement("h1",{},"this is h1 tag"),React.createElement("h2",{},"this is h2 tag")]));
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(parent);
+
+   </script>
+
+
+
+</body>
+</html>
