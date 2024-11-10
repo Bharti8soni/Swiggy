@@ -1,0 +1,21 @@
+{
+  "name": "laying_the_foundation",
+  "version": "1.0.0",
+  "description": "This is the JSX",
+ 
+  "scripts": {
+    "test": "jest",
+    "start": "parcel 03.html",
+    "build": "parcel build 03.html"
+  },
+  
+  "author": "Bharti soni",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
