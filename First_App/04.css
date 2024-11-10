@@ -1,0 +1,40 @@
+.header{
+    display:flex; /*logo aur home,about us,etc ko horizontal laye*/
+    justify-content: space-between;/*distributes the flex items evenly along the main axis, */
+    border: 1px solid black;
+}
+.logo{
+    width:150px; /*reducing the size of logo*/
+}
+.nav-items > ul{
+    display:flex; /*the display: flex property is applied to the <ul> element allowing its child <li> elements to be laid out in a flexbox layout(means child(li) ko ek row me le aaye*/
+    list-style-type: none;/*It doesnot put any style to the list*/
+}
+.nav-items > ul > li{
+    font-size: 24px;
+    padding: 10px;/*Padding is space between the content of an element and its border.*/
+    margin: 10px;/*Margin is the space outside an element, between its border and adjacent elements*/
+    
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;/* it allows flex items to wrap onto multiple lines as needed.*/
+}
+.res-card{
+    margin: 5px;
+    padding:3px;
+    width:200px;
+   
+   
+}
+.res-card:hover{
+    border:1px solid black;
+    cursor: pointer;
+}
+.search{
+    padding: 10px;
+}
+.res-logo{
+    
+   width: 100%;/*To fit inside my cart*/
+}
